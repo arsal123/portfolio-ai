@@ -16,188 +16,516 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./resources/favicon.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <!-- Put your site title here -->
+    <title>Arsalan Siddiqui | A Full Stack Agentic Flow Developer</title>
 
-  <!-- Put your site title here -->
-  <title>
-    Arsalan Siddiqui | A Full Stack Agentic Flow Developer 
-  </title>
+    <meta
+      name="description"
+      content="Arsalan Siddiqui a Full Stack Developer with expertise in Automation and AI. Python, Java, Angular, TypeScript, JavaScript"
+    />
+    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+    <meta
+      name="keywords"
+      content="Arsalan Siddiqui, AI, Automation, Full Stack Developer, Angular, TypeScript, JavaScript, Java, Python"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-  <meta name="description" content="Arsalan Siddiqui a Full Stack Developer with expertise in Automation and AI. Python, Java, Angular, TypeScript, JavaScript">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Arsalan Siddiqui, AI, Automation, Full Stack Developer, Angular, TypeScript, JavaScript, Java, Python" />
-  <link rel="stylesheet" href="index.css" />
-</head>
-
-<body>
-  <!-- ***** Header ***** -->
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Arsalan Siddiqui</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Full Stack Developer with over 15 years of Software Engineering Experience with expertise in RAG Agentic Systems using chatbots or some Light weight UI interfaces (Python, Java, Angular, TypeScript / JavaScript)</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
-
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
+  <body>
+    <!-- ***** Header ***** -->
+    <header class="header" role="banner" id="top">
       <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#clients" class="nav__link">Clients</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <!-- Replace the following name with your name -->
+            <span>Arsalan Siddiqui</span>
+          </h1>
+          <!-- Put a small paragraph about yourself -->
+          <p>
+            A Full Stack Developer with over 15 years of Software Engineering
+            Experience with expertise in RAG Agentic Systems using chatbots or
+            some Light weight UI interfaces (Python, Java, Angular, TypeScript /
+            JavaScript)
+          </p>
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
+        </div>
+      </div>
+    </header>
 
-          <!-- Each div with the work__box class is a project. -->
+    <main role="main">
+      <!-- ***** Work ***** -->
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Portfolio Template</h3>
-              <p>
-                Document Query System
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
-              </ul>
+      <section class="work" id="work">
+        <div class="row">
+          <h2>My Work</h2>
+          <div class="work__boxes">
+            <!-- Each div with the work__box class is a project. -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>RAG Document Query System</h3>
+                <p>
+                  An RAG (Retrieval-Augmented Generation) agent application that
+                  allows you to upload PDF documents and query all your uploaded
+                  data using a simple search box.
+                </p>
 
-              <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
+                <div class="work__content-grid">
+                  <div class="work__content-column">
+                    <ul class="work__list work__list--features">
+                      <li>
+                        On the backend an agent takes the query, pull the
+                        relevant data and use a model to generate answer. It
+                        also list source documents it has used.
+                      </li>
+                      <li>
+                        Features PDF ingestion with chunking (for large pdfs),
+                        vector embeddings and AI-powered context-aware answers.
+                      </li>
+                      <li>
+                        Asynchronous processing with observability (Inngest) and
+                        workflow orchestration.
+                      </li>
+                      <li>
+                        A web user interface is written in modern Angular 20
+                        (zoneless).
+                      </li>
+                    </ul>
+                    <div class="work__tech-label">Tech Stack:</div>
+                    <ul class="work__list">
+                      <li>Python</li>
+                      <li>FastAPI async API framework</li>
+                      <li>Inngest for orchestration and observability</li>
+                      <li>LlamaIndex for document chunking</li>
+                      <li>Qdrant vector database</li>
+                      <li>Angular 20 UI client (TypeScript)</li>
+                      <li>Streamlit another UI client</li>
+                    </ul>
+                  </div>
+
+                  <div class="work__image-column">
+                    <img
+                      src="./resources/projects/rag_main.jpg"
+                      class="work__project-image zoomable"
+                      alt="RAG Document Query System Interface"
+                    />
+                  </div>
+                </div>
+
+                <div class="work__links">
+                  <a
+                    class="link__text"
+                    href="https://github.com/arsal123/rag-query-any-pdf"
+                    title="View Source Code & Details"
+                    target="_blank"
+                  >
+                    <img
+                      src="./resources/github.svg"
+                      class="img_link"
+                      alt="GitHub"
+                    />
+                    https://github.com/arsal123/rag-query-any-pdf
+                    <em>(source code and details)</em>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="https://via.placeholder.com/600x400/cccccc/666666?text=Project+Image" class="work__image" alt="Project 1" />
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Consult Genie</h3>
+                <p>
+                  An AI multi agent system for processing doctor patient transcript
+                  with additional info from the the context and realtime helping
+                  doctor with summaries and recommendations. Doctor can also
+                  query the system for specific information. The system has
+                  domain specific specialized agents to handle different types
+                  of queries and save the doctor some time.
+                </p>
+                <div class="work__content-grid">
+                  <div class="work__content-column">
+                    <ul class="work__list work__list--features">
+                      <li>
+                        Speech-to-Text agent to convert doctor-patient audio to a proper transcript.
+                      </li>
+                      <li>
+                        Summarization agent to generate visit summary and
+                        recommendations like tests, prescriptions etc.
+                      </li>
+                      <li>
+                        Based on the summary, specialized agents are available in the chat to answer any further queries by the doctor.
+                      </li>
+                      <li>
+                        Workflow orchestration and asynchronous processing
+                        (Inngest).
+                      </li>
+                    </ul>
+                    <div class="work__tech-label">Tech Stack:</div>
+                    <ul class="work__list">
+                      <li>Python</li>
+                      <li>Autogen agentic framework</li>
+                      <li>SQLAlchemy for ORM database interactions</li>
+                      <li>RabbitMQ as async message broker</li>
+                      <li>React.js UI components</li>
+                    </ul>
+                  </div>
+                  <div class="work__image-column">
+                    <img
+                      src="./resources/projects/consult_genie_main.jpg"
+                      class="work__project-image zoomable"
+                      alt="Consult Genie Architecture"
+                    />
+                  </div>
+                </div>
+                <div class="work__links">
+                  (Further technical details can be provided on request) 
+                </div>
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>BPMN Rules Engine Microservice for Workflows</h3>
+                <p>
+                  A Java Spring Boot microservice for managing BPMN workflows. It acts as a rules engine to trigger async workflows based on events in a distributed system with 20+ microservices.
+                </p>
+                <div class="work__content-grid">
+                  <div class="work__content-column">
+                    <ul class="work__list work__list--features">
+                      <li>
+                        Multi-module Gradle project implementing workflow orchestration using Camunda BPM engine with BPMN 2.0 workflows.
+                      </li>
+                      <li>
+                        REST API server for LTAM management with OpenAPI-first design, code generation, and Swagger UI.
+                      </li>
+                      <li>
+                        RabbitMQ message broker for asynchronous processing and inter-service communication in distributed system.
+                      </li>
+                      <li>
+                        Spring Data JPA repositories with PostgreSQL backend, Flyway migrations, and domain-driven design patterns.
+                      </li>
+                      <li>
+                        Comprehensive security with token-based authentication, permission-based authorization, and HIPAA-compliant audit logging.
+                      </li>
+                    </ul>
+                    <div class="work__tech-label">Tech Stack:</div>
+                    <ul class="work__list">
+                      <li>Java 8 / Spring Boot 2.x</li>
+                      <li>Camunda BPMN 7.12 workflow engine</li>
+                      <li>PostgreSQL with Spring Data JPA</li>
+                      <li>RabbitMQ message broker</li>
+                      <li>Gradle multi-module build</li>
+                      <li>OpenAPI 3.0 / Swagger code generation</li>
+                      <li>Flyway database migrations</li>
+                    </ul>
+                  </div>
+                  <div class="work__image-column">
+                    <img
+                      src="./resources/projects/camunda_rules_engine_workflow.svg"
+                      class="work__project-image zoomable"
+                      alt="BPMN Workflow Architecture"
+                    />
+                  </div>
+                </div>
+                <div class="work__links">
+                  (Further technical details can be provided on request) 
+                </div>
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>CI/CD npm Open Source Plugins</h3>
+                <p>
+                  Created a suite of open source npm modules that enable seamless Continuous Integration for UI and backend (Java) end-to-end tests by integrating test results with Jira XRay for requirement tracking and test management.
+                </p>
+                <ul class="work__list work__list--features">
+                  <li>
+                    <strong>protractor-junit-xml-plugin:</strong> A Protractor reporter plugin that generates JUnit XML files from e2e test runs with Jira XRay IDs, enabling automated linking of test results to requirements for continuous integration workflows.
+                  </li>
+                  <li>
+                    <strong>karma-junit-xray-reporter:</strong> A Karma test runner reporter providing similar functionality to the Protractor plugin, allowing JavaScript unit tests to export results with XRay IDs for requirement traceability.
+                  </li>
+                  <li>
+                    <strong>dir-uploader:</strong> A multi-directory uploader module that serves as a post-process step to upload e2e test results back to Jira using REST Multipart POST requests, completing the CI/CD feedback loop.
+                  </li>
+                </ul>
+                <div class="work__tech-label">Tech Stack:</div>
+                <ul class="work__list">
+                  <li>Node.js / JavaScript</li>
+                  <li>Protractor / Karma test frameworks</li>
+                  <li>JUnit XML format</li>
+                  <li>Jira XRay integration</li>
+                  <li>REST API / Multipart requests</li>
+                  <li>Mocha testing framework</li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    class="link__text"
+                    href="https://www.npmjs.com/package/protractor-junit-xml-plugin"
+                    title="View protractor-junit-xml-plugin on npm"
+                    target="_blank"
+                  >
+                    <img
+                      src="./resources/github.svg"
+                      class="img_link"
+                      alt="npm"
+                    />
+                    protractor-junit-xml-plugin 
+                  </a>
+                  <a
+                    class="link__text"
+                    href="https://www.npmjs.com/package/karma-junit-xray-reporter"
+                    title="View karma-junit-xray-reporter on npm"
+                    target="_blank"
+                  >
+                    <img
+                      src="./resources/github.svg"
+                      class="img_link"
+                      alt="npm"
+                    />
+                    karma-junit-xray-reporter 
+                  </a>
+                  <a
+                    class="link__text"
+                    href="https://www.npmjs.com/package/dir-uploader"
+                    title="View dir-uploader on npm"
+                    target="_blank"
+                  >
+                    <img
+                      src="./resources/github.svg"
+                      class="img_link"
+                      alt="npm"
+                    />
+                    dir-uploader 
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Incremental Cache Loader</h3>
+                <p>
+                  A Java-based application designed to optimize cache loading for Gemfire by implementing incremental cache updates. This is for a highly transactional microservice where transactions were reaching upto 3000 TPS. As the dataset grew, full cache loads became increasingly time-consuming, necessitating a solution that loads only changed data based on version numbers.
+                </p>
+                <div class="work__content-grid">
+                  <div class="work__content-column">
+                    <ul class="work__list work__list--features">
+                      <li>
+                        Independent Java application that loads only incremental data changes to Gemfire cache instead of full data loads.
+                      </li>
+                      <li>
+                        Version-based data synchronization ensuring only outdated cache entries are updated with latest database versions.
+                      </li>
+                      <li>
+                        Polling mechanism using Java threads to continuously monitor database changes and trigger cache updates.
+                      </li>
+                      <li>
+                        Multithreaded architecture to improve application performance and handle concurrent cache update operations efficiently.
+                      </li>
+                      <li>
+                        Served as primary developer for design and implementation, significantly reducing cache load times as data volume increased.
+                      </li>
+                    </ul>
+                    <div class="work__tech-label">Tech Stack:</div>
+                    <ul class="work__list">
+                      <li>Java</li>
+                      <li>Gemfire distributed cache</li>
+                      <li>Java Threading / Multithreading</li>
+                      <li>Database polling mechanisms</li>
+                      <li>Version-based synchronization</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="work__links">
+                  (Further technical details can be provided on request) 
+                </div>
+              </div>
+            </div>
+            <p class="more-projects-note">
+              I have worked on many more projects. Please feel free to check out
+              <a href="resources/resume_python_ai_real.pdf" target="_blank"
+                >my resume</a
+              >
+              for work details.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** Clients ***** -->
+
+      <section class="client" id="clients">
+        <div class="row">
+          <h2>Companies I have worked</h2>
+
+          <div class="client__logos">
+            <!-- Add logos of the clients or companies you'have worked with. -->
+            <img src="./resources/aaa.svg" class="client__logo" alt="AAA" />
+            <img
+              src="./resources/expedia-logo.png"
+              class="client__logo highlight"
+              alt="Expedia"
+            />
+
+            <img
+              src="./resources/philips-logo-big.svg"
+              class="client__logo highlight"
+              alt="Philips"
+            />
+            <img
+              src="./resources/TDH-logo-Full-Color.svg"
+              class="client__logo highlight"
+              alt="TDH"
+            />
+            <img
+              src="./resources/Rogers-logo-full.png"
+              class="client__logo highlight"
+              alt="Rogers"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** About ***** -->
+
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <!-- Replace the below paragraph with info about yourself -->
+              <p style="text-align: justify">
+                A Software Engineer with over 15 years of experience in
+                designing and developing robust applications. Strong focus on
+                Automation and AI to build intelligent systems that streamline
+                business processes and enhance user experiences. Proficient in
+                Python, Java, Angular, TypeScript, and JavaScript. Passionate
+                about leveraging cutting-edge technologies to solve complex
+                problems and drive innovation.
+              </p>
+              <!-- Provide a link to your resume -->
+              <a
+                href="resources/resume_python_ai_real.pdf"
+                class="btn"
+                target="_blank"
+                >My Resume</a>
+            </div>
+
+            <div class="about__photo-container">
+              <!-- Add a nice photo of yourself -->
+              <img
+                class="about__photo"
+                src="resources/withSuit.jpeg"
+                alt="TBD"
+              />
             </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- ***** Clients ***** -->
+    <!-- ***** Contact ***** -->
 
-    <section class="client" id="clients">
+    <section class="contact" id="contact">
       <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        <h2 style="margin-bottom: var(--gutter-small)">Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+            <b>&#8226;</b> Are you looking to introduce AI agents to automate a process and
+            save time so that you can focus on what matters in your business?
+            <br />
+            <b>&#8226;</b> Would you like a free analysis / consultation to see how AI flows /
+            automation benefit your business?
+            <br />
+            <b>&#8226;</b> Or for any consultation work. Please feel free to send me an email.
+            Here is my direct email
+          </p>
+          <!-- Replace the email with yours -->
+          <a href="mailto:j2ee.siddiqui@gmail.com" class="btn"
+            >j2ee.siddiqui@gmail.com</a
+          >
         </div>
       </div>
     </section>
 
-    <!-- ***** About ***** -->
+    <!-- ***** Footer ***** -->
 
-    <section class="about" id="about">
+    <footer role="contentinfo" class="footer">
       <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
+        <!-- Update the links to point to your accounts -->
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a
+              href="https://github.com/arsal123/"
+              title="Link to Github Profile"
+            >
+              <img
+                src="./resources/github.svg"
+                class="footer__social-image"
+                alt="Github"
+              />
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="https://www.linkedin.com/in/arsalan-siddiqui-75870259/">
+              <img
+                src="./resources/linkedin.svg"
+                title="Link to Linkedin Profile"
+                class="footer__social-image"
+                alt="Linkedin"
+              />
+            </a>
+          </li>
+        </ul>
 
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="" alt="TBD" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2 style="margin-bottom: var(--gutter-small);">Get in Touch</h2>
-      <div class="contact__info">
+        <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
         <p>
-          Are you looking to introduce AI agents to automate a process and save time so that you can focus on what matters in your business? 
-          <br>
-          Would you like a free analysis / consultation to see how AI flows / automation benefit your business?  
-          <br>
-          Or for any consultation work. Please feel free to send me an email. Here is my direct email
+          &copy; 2024 Arsalan Siddiqui. All rights reserved. <br />
+          Original template designed by Nisar
         </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:j2ee.siddiqui@gmail.com" class="btn">j2ee.siddiqui@gmail.com</a>
       </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="./resources/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
+    
+    <!-- Image Zoom Modal -->
+    <div id="imageModal" class="image-modal">
+      <span class="image-modal__close">&times;</span>
+      <img class="image-modal__content" id="modalImage" alt="Zoomed Image">
+      <div class="image-modal__caption" id="modalCaption"></div>
     </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://github.com/arsal123/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/arsalan-siddiqui-75870259/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2024 Arsalan Siddiqui. All rights reserved. <br />
-        Original template designed by Nisar
-      </p>
-    </div>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
-</body>
-
+    
+    <script src="./index.js"></script>
+  </body>
 </html>

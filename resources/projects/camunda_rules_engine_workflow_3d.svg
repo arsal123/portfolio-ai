@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+     width="1048" height="551" viewBox="0 0 1048 551">
+  
+  <!-- ========================================= -->
+  <!-- DEFINITIONS: Gradients, Filters, Markers -->
+  <!-- ========================================= -->
+  <defs>
+    <!-- Background Gradient (Professional Gray) -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Primary Component Gradient (Blue-Gray) -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#475569;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Secondary Component Gradient (Lighter Blue-Gray) -->
+    <linearGradient id="secondaryGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Accent Gradient (Professional Blue) -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Process Layer Gradients (Subtle variations) -->
+    <linearGradient id="process1Gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:0.95" />
+    </linearGradient>
+    
+    <linearGradient id="process2Gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:0.85" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:0.85" />
+    </linearGradient>
+    
+    <linearGradient id="process3Gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:0.75" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:0.75" />
+    </linearGradient>
+    
+    <!-- ========================================= -->
+    <!-- FILTERS: Shadows and Effects -->
+    <!-- ========================================= -->
+    
+    <!-- Drop Shadow - Strong (for main components) -->
+    <filter id="dropShadowStrong" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="6" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.35"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Drop Shadow - Medium (for sub-components) -->
+    <filter id="dropShadowMedium" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.25"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Drop Shadow - Soft (for text and arrows) -->
+    <filter id="dropShadowSoft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.15"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Glow Effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#8b5cf6" flood-opacity="0.5" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Inner Shadow for depth -->
+    <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="0" dy="3" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.2" result="color"/>
+      <feComposite in="color" in2="offsetBlur" operator="out" result="shadow"/>
+      <feComposite in="shadow" in2="SourceAlpha" operator="in" result="innerShadow"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="innerShadow"/>
+      </feMerge>
+    </filter>
+    
+    <!-- ========================================= -->
+    <!-- ARROW MARKERS -->
+    <!-- ========================================= -->
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#0ea5e9" />
+    </marker>
+    
+    <marker id="arrowheadReturn" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#64748b" />
+    </marker>
+  </defs>
+  
+  <!-- ========================================= -->
+  <!-- BACKGROUND -->
+  <!-- ========================================= -->
+  <rect width="1048" height="551" fill="url(#bgGradient)"/>
+  
+  <!-- ========================================= -->
+  <!-- RABBITMQ QUEUE COMPONENT -->
+  <!-- ========================================= -->
+  <g id="rabbitmq-queue" transform="translate(150, 290)">
+    <!-- Main Queue Container -->
+    <rect x="0" y="0" width="93" height="190" rx="15" ry="15"
+          fill="url(#secondaryGradient)" 
+          stroke="#334155" stroke-width="2"
+          filter="url(#dropShadowStrong)"/>
+    
+    <!-- Queue Icon -->
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="50" height="8" rx="2" fill="#ffffff" opacity="0.9"/>
+      <rect x="0" y="15" width="50" height="8" rx="2" fill="#ffffff" opacity="0.8"/>
+      <rect x="0" y="30" width="50" height="8" rx="2" fill="#ffffff" opacity="0.7"/>
+      <rect x="0" y="45" width="50" height="8" rx="2" fill="#ffffff" opacity="0.6"/>
+    </g>
+    
+    <!-- Queue Text -->
+    <text x="46.5" y="100" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="14" font-weight="700" fill="#ffffff"
+          filter="url(#dropShadowSoft)">
+      <tspan x="46.5" dy="0">RabbitMQ</tspan>
+      <tspan x="46.5" dy="18">Queue</tspan>
+    </text>
+    
+    <text x="46.5" y="140" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="11" font-weight="500" fill="#ffffff" opacity="0.9">
+      <tspan x="46.5" dy="0">with Multiple</tspan>
+      <tspan x="46.5" dy="14">queues</tspan>
+    </text>
+  </g>
+  
+  <!-- ========================================= -->
+  <!-- CAMUNDA RULES ENGINE MS COMPONENT -->
+  <!-- ========================================= -->
+  <g id="camunda-engine" transform="translate(350, 250)">
+    <!-- Main Container -->
+    <rect x="73" y="10" width="360" height="180" rx="20" ry="20"
+          fill="url(#primaryGradient)" 
+          stroke="#1e293b" stroke-width="2"
+          filter="url(#dropShadowStrong)"/>
+    
+    <!-- BPMN Process Layer 3 (Back) -->
+    <rect x="160" y="90" width="120" height="60" rx="12" ry="12"
+          fill="url(#process3Gradient)" 
+          stroke="#334155" stroke-width="1.5"
+          filter="url(#dropShadowMedium)"/>
+    <text x="220" y="115" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="11" font-weight="600" fill="#f8fafc">
+      BPMN Process 3
+    </text>
+    <circle cx="220" cy="130" r="5" fill="#0ea5e9" opacity="0.8"/>
+    
+    <!-- BPMN Process Layer 2 (Middle) -->
+    <rect x="140" y="70" width="120" height="60" rx="12" ry="12"
+          fill="url(#process2Gradient)" 
+          stroke="#334155" stroke-width="1.5"
+          filter="url(#dropShadowMedium)"/>
+    <text x="200" y="95" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="11" font-weight="600" fill="#f8fafc">
+      BPMN Process 2
+    </text>
+    <circle cx="200" cy="110" r="5" fill="#0ea5e9" opacity="0.9"/>
+    
+    <!-- BPMN Process Layer 1 (Front) -->
+    <rect x="120" y="50" width="120" height="60" rx="12" ry="12"
+          fill="url(#process1Gradient)" 
+          stroke="#334155" stroke-width="1.5"
+          filter="url(#dropShadowMedium)"/>
+    <text x="180" y="75" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="11" font-weight="600" fill="#f8fafc">
+      BPMN Process 1
+    </text>
+    <circle cx="180" cy="90" r="5" fill="#0ea5e9" opacity="1"/>
+    
+    <!-- Title -->
+    <text x="253" y="35" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="16" font-weight="700" fill="#f8fafc"
+          filter="url(#dropShadowSoft)">
+      Camunda Rules Engine MS
+    </text>
+    
+    <!-- Process Flow Label -->
+    <text x="253" y="175" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="12" font-weight="500" fill="#cbd5e1" opacity="0.95">
+      Process Flow
+    </text>
+    
+    <!-- Gear Icon -->
+    <g transform="translate(390, 25)">
+      <circle cx="0" cy="0" r="12" fill="#0ea5e9" opacity="0.3"/>
+      <path d="M 0,-8 L 2,-6 L 2,-2 L 6,-2 L 6,0 L 2,0 L 2,6 L 0,8 L -2,6 L -2,2 L -6,2 L -6,0 L -2,0 L -2,-6 Z" 
+            fill="#0ea5e9" opacity="0.9"/>
+    </g>
+  </g>
+  
+  <!-- ========================================= -->
+  <!-- POSTGRES DATABASE COMPONENT -->
+  <!-- ========================================= -->
+  <g id="postgres-db" transform="translate(700, 485)">
+    <!-- Database Cylinder Body -->
+    <ellipse cx="30" cy="15" rx="30" ry="15" 
+             fill="url(#secondaryGradient)" 
+             stroke="#334155" stroke-width="2"
+             filter="url(#dropShadowStrong)"/>
+    <rect x="0" y="15" width="60" height="50" 
+          fill="url(#secondaryGradient)" 
+          stroke="#334155" stroke-width="2"/>
+    <ellipse cx="30" cy="65" rx="30" ry="15" 
+             fill="#475569" 
+             stroke="#334155" stroke-width="2"/>
+    
+    <!-- Reflection on cylinder -->
+    <ellipse cx="30" cy="25" rx="15" ry="8" fill="#ffffff" opacity="0.15"/>
+    
+    <!-- DB Icon -->
+    <g transform="translate(20, 35)">
+      <rect x="0" y="0" width="20" height="3" rx="1" fill="#0ea5e9" opacity="0.8"/>
+      <rect x="0" y="6" width="20" height="3" rx="1" fill="#0ea5e9" opacity="0.7"/>
+      <rect x="0" y="12" width="20" height="3" rx="1" fill="#0ea5e9" opacity="0.6"/>
+    </g>
+    
+    <!-- Text -->
+    <text x="30" y="95" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="13" font-weight="700" fill="#334155"
+          filter="url(#dropShadowSoft)">
+      Postgres DB
+    </text>
+  </g>
+  
+  <!-- ========================================= -->
+  <!-- DISTRIBUTED MICROSERVICES CLOUD -->
+  <!-- ========================================= -->
+  <g id="microservices-cloud" transform="translate(660, 100)">
+    <!-- Cloud Shape -->
+    <ellipse cx="150" cy="80" rx="100" ry="45" 
+             fill="#f1f5f9" 
+             stroke="#94a3b8" stroke-width="2"
+             filter="url(#dropShadowStrong)"/>
+    <ellipse cx="100" cy="70" rx="80" ry="40" 
+             fill="#f1f5f9" 
+             stroke="#94a3b8" stroke-width="2"/>
+    <ellipse cx="200" cy="70" rx="80" ry="40" 
+             fill="#f1f5f9" 
+             stroke="#94a3b8" stroke-width="2"/>
+    <ellipse cx="150" cy="50" rx="90" ry="35" 
+             fill="#f1f5f9" 
+             stroke="#94a3b8" stroke-width="2"/>
+    
+    <!-- Service Icons -->
+    <g transform="translate(100, 50)">
+      <circle cx="0" cy="0" r="8" fill="#0ea5e9" opacity="0.7"/>
+      <circle cx="0" cy="0" r="4" fill="#ffffff"/>
+    </g>
+    <g transform="translate(150, 55)">
+      <circle cx="0" cy="0" r="8" fill="#0ea5e9" opacity="0.8"/>
+      <circle cx="0" cy="0" r="4" fill="#ffffff"/>
+    </g>
+    <g transform="translate(200, 50)">
+      <circle cx="0" cy="0" r="8" fill="#0ea5e9" opacity="0.9"/>
+      <circle cx="0" cy="0" r="4" fill="#ffffff"/>
+    </g>
+    
+    <!-- Text -->
+    <text x="150" y="90" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="14" font-weight="700" fill="#334155"
+          filter="url(#dropShadowSoft)">
+      Distributed Microservices
+    </text>
+  </g>
+  
+  <!-- ========================================= -->
+  <!-- CONNECTING ARROWS AND LABELS -->
+  <!-- ========================================= -->
+  
+  <!-- Queue to Engine Arrow -->
+  <g id="queue-to-engine">
+    <path d="M 243 385 L 423 390" 
+          stroke="#0ea5e9" stroke-width="3" fill="none" 
+          marker-end="url(#arrowhead)"
+          filter="url(#dropShadowSoft)"/>
+    <text x="333" y="375" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="12" font-weight="600" fill="#334155"
+          filter="url(#dropShadowSoft)">
+      <tspan x="333" dy="0">Flow Trigger as</tspan>
+      <tspan x="333" dy="14">per event in Queue</tspan>
+    </text>
+  </g>
+  
+  <!-- Engine to Queue Return Arrow -->
+  <g id="engine-to-queue-return">
+    <path d="M 611 270 L 611 200 L 50 200 L 50 380 L 100 380" 
+          stroke="#64748b" stroke-width="2.5" fill="none" 
+          marker-end="url(#arrowheadReturn)"
+          stroke-dasharray="6,4"
+          filter="url(#dropShadowSoft)"/>
+    <text x="300" y="185" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="11" font-weight="600" fill="#475569"
+          filter="url(#dropShadowSoft)">
+      Result of flow to "status queue"
+    </text>
+  </g>
+  
+  <!-- Engine to DB Arrow -->
+  <g id="engine-to-db">
+    <path d="M 730 430 L 730 485" 
+          stroke="#0ea5e9" stroke-width="3" fill="none" 
+          marker-end="url(#arrowhead)"
+          filter="url(#dropShadowSoft)"/>
+    <rect x="710" y="440" width="40" height="35" rx="5" 
+          fill="#f8fafc" opacity="0.95" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="730" y="460" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="10" font-weight="600" fill="#334155">
+      Data
+    </text>
+  </g>
+  
+  <!-- Engine to Services Arrow -->
+  <g id="engine-to-services">
+    <path d="M 640 310 L 750 230" 
+          stroke="#0ea5e9" stroke-width="3" fill="none" 
+          marker-end="url(#arrowhead)"
+          filter="url(#dropShadowSoft)"/>
+    <text x="695" y="255" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="11" font-weight="600" fill="#334155"
+          filter="url(#dropShadowSoft)">
+      <tspan x="695" dy="0">Using other</tspan>
+      <tspan x="695" dy="13">distributed services</tspan>
+      <tspan x="695" dy="13">as needed</tspan>
+    </text>
+  </g>
+  
+  <!-- ========================================= -->
+  <!-- TITLE -->
+  <!-- ========================================= -->
+  <g id="diagram-title">
+    <text x="524" y="540" text-anchor="middle" 
+          font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+          font-size="18" font-weight="700" fill="#334155"
+          filter="url(#dropShadowSoft)">
+      Camunda Rules Engine Workflow
+    </text>
+  </g>
+  
+</svg>

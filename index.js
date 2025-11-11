@@ -41,3 +41,43 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+/* -----------------------------------------
+  Image Zoom Modal Functionality
+ ---------------------------------------- */
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+const modalCaption = document.getElementById("modalCaption");
+const closeBtn = document.querySelector(".image-modal__close");
+
+// Get all zoomable images
+const zoomableImages = document.querySelectorAll(".zoomable");
+
+// Add click event to each zoomable image
+zoomableImages.forEach((img) => {
+  img.addEventListener("click", function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalCaption.textContent = this.alt;
+  });
+});
+
+// Close the modal when clicking the X button
+closeBtn.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+// Close the modal when clicking outside the image
+modal.addEventListener("click", function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+// Close the modal when pressing Escape key
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape" && modal.style.display === "block") {
+    modal.style.display = "none";
+  }
+});

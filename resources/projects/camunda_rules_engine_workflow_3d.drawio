@@ -1,0 +1,255 @@
+<mxfile host="app.diagrams.net" modified="2025-11-10T17:21:32.000Z" agent="Warp AI Agent" version="24.0.0" etag="professional-architecture" type="device">
+  <diagram id="camunda-workflow-3d" name="Camunda Rules Engine Workflow">
+    <mxGraphModel dx="1048" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1048" pageHeight="551" math="0" shadow="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Background -->
+        <mxCell id="background" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=none;gradientColor=#e2e8f0;gradientDirection=south;" vertex="1" parent="1">
+          <mxGeometry width="1048" height="551" as="geometry"/>
+        </mxCell>
+        
+        <!-- RabbitMQ Queue -->
+        <mxCell id="rabbitmq-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#64748b;strokeColor=#334155;strokeWidth=2;shadow=1;arcSize=15;gradientColor=#475569;gradientDirection=south;" vertex="1" parent="1">
+          <mxGeometry x="150" y="290" width="93" height="190" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="rabbitmq-icon1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=none;opacity=90;" vertex="1" parent="1">
+          <mxGeometry x="170" y="310" width="50" height="8" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="rabbitmq-icon2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=none;opacity=80;" vertex="1" parent="1">
+          <mxGeometry x="170" y="325" width="50" height="8" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="rabbitmq-icon3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=none;opacity=70;" vertex="1" parent="1">
+          <mxGeometry x="170" y="340" width="50" height="8" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="rabbitmq-icon4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=none;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="170" y="355" width="50" height="8" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="rabbitmq-text" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#ffffff&quot;&gt;RabbitMQ&lt;br&gt;Queue&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="166.5" y="375" width="60" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="rabbitmq-subtitle" value="&lt;font style=&quot;font-size: 11px;&quot; color=&quot;#ffffff&quot;&gt;with Multiple&lt;br&gt;queues&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;opacity=90;" vertex="1" parent="1">
+          <mxGeometry x="166.5" y="415" width="60" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Camunda Rules Engine MS -->
+        <mxCell id="camunda-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#475569;strokeColor=#1e293b;strokeWidth=2;shadow=1;arcSize=10;gradientColor=#334155;gradientDirection=south;" vertex="1" parent="1">
+          <mxGeometry x="423" y="260" width="360" height="180" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="camunda-title" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#f8fafc&quot;&gt;Camunda Rules Engine MS&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="503" y="275" width="200" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- BPMN Process Layer 3 -->
+        <mxCell id="process3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#64748b;strokeColor=#334155;strokeWidth=1.5;shadow=1;arcSize=15;opacity=75;gradientColor=#475569;gradientDirection=south;" vertex="1" parent="1">
+          <mxGeometry x="510" y="340" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="process3-text" value="&lt;font style=&quot;font-size: 11px;&quot; color=&quot;#f8fafc&quot;&gt;&lt;b&gt;BPMN Process 3&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="355" width="80" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="process3-dot" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0ea5e9;strokeColor=none;opacity=80;" vertex="1" parent="1">
+          <mxGeometry x="565" y="375" width="10" height="10" as="geometry"/>
+        </mxCell>
+        
+        <!-- BPMN Process Layer 2 -->
+        <mxCell id="process2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#64748b;strokeColor=#334155;strokeWidth=1.5;shadow=1;arcSize=15;opacity=85;gradientColor=#475569;gradientDirection=south;" vertex="1" parent="1">
+          <mxGeometry x="490" y="320" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="process2-text" value="&lt;font style=&quot;font-size: 11px;&quot; color=&quot;#f8fafc&quot;&gt;&lt;b&gt;BPMN Process 2&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="335" width="80" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="process2-dot" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0ea5e9;strokeColor=none;opacity=90;" vertex="1" parent="1">
+          <mxGeometry x="545" y="355" width="10" height="10" as="geometry"/>
+        </mxCell>
+        
+        <!-- BPMN Process Layer 1 -->
+        <mxCell id="process1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#64748b;strokeColor=#334155;strokeWidth=1.5;shadow=1;arcSize=15;opacity=95;gradientColor=#475569;gradientDirection=south;" vertex="1" parent="1">
+          <mxGeometry x="470" y="300" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="process1-text" value="&lt;font style=&quot;font-size: 11px;&quot; color=&quot;#f8fafc&quot;&gt;&lt;b&gt;BPMN Process 1&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="315" width="80" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="process1-dot" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0ea5e9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="525" y="335" width="10" height="10" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="camunda-subtitle" value="&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#cbd5e1&quot;&gt;Process Flow&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;opacity=95;" vertex="1" parent="1">
+          <mxGeometry x="553" y="415" width="100" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- Gear Icon -->
+        <mxCell id="gear-bg" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0ea5e9;strokeColor=none;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="728" y="263" width="24" height="24" as="geometry"/>
+        </mxCell>
+        
+        <!-- Postgres DB -->
+        <mxCell id="db-top" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#64748b;strokeColor=#334155;strokeWidth=2;shadow=1;gradientColor=#475569;gradientDirection=south;" vertex="1" parent="1">
+          <mxGeometry x="700" y="485" width="60" height="30" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="db-body" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#64748b;strokeColor=#334155;strokeWidth=2;gradientColor=#475569;gradientDirection=south;" vertex="1" parent="1">
+          <mxGeometry x="700" y="500" width="60" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="db-bottom" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#475569;strokeColor=#334155;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="535" width="60" height="30" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="db-reflection" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=none;opacity=15;" vertex="1" parent="1">
+          <mxGeometry x="715" y="505" width="30" height="16" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="db-icon1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0ea5e9;strokeColor=none;opacity=80;" vertex="1" parent="1">
+          <mxGeometry x="720" y="520" width="20" height="3" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="db-icon2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0ea5e9;strokeColor=none;opacity=70;" vertex="1" parent="1">
+          <mxGeometry x="720" y="526" width="20" height="3" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="db-icon3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0ea5e9;strokeColor=none;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="720" y="532" width="20" height="3" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="db-text" value="&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot; color=&quot;#334155&quot;&gt;Postgres DB&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="565" width="100" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- Distributed Microservices Cloud -->
+        <mxCell id="cloud1" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#94a3b8;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="135" width="200" height="90" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="cloud2" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#94a3b8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="660" y="130" width="160" height="80" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="cloud3" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#94a3b8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="820" y="130" width="160" height="80" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="cloud4" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#94a3b8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="720" y="115" width="180" height="70" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="service1-outer" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0ea5e9;strokeColor=none;opacity=70;" vertex="1" parent="1">
+          <mxGeometry x="752" y="142" width="16" height="16" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="service1-inner" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="756" y="146" width="8" height="8" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="service2-outer" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0ea5e9;strokeColor=none;opacity=80;" vertex="1" parent="1">
+          <mxGeometry x="802" y="147" width="16" height="16" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="service2-inner" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="806" y="151" width="8" height="8" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="service3-outer" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0ea5e9;strokeColor=none;opacity=90;" vertex="1" parent="1">
+          <mxGeometry x="852" y="142" width="16" height="16" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="service3-inner" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="856" y="146" width="8" height="8" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="cloud-text" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#334155&quot;&gt;Distributed Microservices&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="175" width="160" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- Arrows -->
+        <mxCell id="arrow1" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#0ea5e9;strokeWidth=3;shadow=1;endFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="243" y="385" as="sourcePoint"/>
+            <mxPoint x="423" y="390" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="arrow1-label" value="&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#334155&quot;&gt;Flow Trigger as&lt;br&gt;per event in Queue&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="273" y="350" width="120" height="30" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow2" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#64748b;strokeWidth=2.5;shadow=1;dashed=1;dashPattern=6 4;endFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="611" y="270" as="sourcePoint"/>
+            <mxPoint x="611" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="arrow2-bend1" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#64748b;strokeWidth=2.5;dashed=1;dashPattern=6 4;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="611" y="200" as="sourcePoint"/>
+            <mxPoint x="50" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="arrow2-bend2" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#64748b;strokeWidth=2.5;dashed=1;dashPattern=6 4;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="200" as="sourcePoint"/>
+            <mxPoint x="50" y="380" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="arrow2-final" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#64748b;strokeWidth=2.5;shadow=1;dashed=1;dashPattern=6 4;endFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="380" as="sourcePoint"/>
+            <mxPoint x="100" y="380" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="arrow2-label" value="&lt;b&gt;&lt;font style=&quot;font-size: 11px;&quot; color=&quot;#475569&quot;&gt;Result of flow to &quot;status queue&quot;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="170" width="120" height="30" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow3" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#0ea5e9;strokeWidth=3;shadow=1;endFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="430" as="sourcePoint"/>
+            <mxPoint x="730" y="485" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="arrow3-label-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#cbd5e1;strokeWidth=2;opacity=95;" vertex="1" parent="1">
+          <mxGeometry x="710" y="440" width="40" height="35" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow3-label" value="&lt;b&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#334155&quot;&gt;Data&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="447.5" width="40" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow4" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#0ea5e9;strokeWidth=3;shadow=1;endFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="310" as="sourcePoint"/>
+            <mxPoint x="750" y="230" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="arrow4-label" value="&lt;b&gt;&lt;font style=&quot;font-size: 11px;&quot; color=&quot;#334155&quot;&gt;Using other&lt;br&gt;distributed services&lt;br&gt;as needed&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="635" y="240" width="120" height="45" as="geometry"/>
+        </mxCell>
+        
+        <!-- Main Title -->
+        <mxCell id="main-title" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot; color=&quot;#334155&quot;&gt;Camunda Rules Engine Workflow&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="374" y="525" width="300" height="25" as="geometry"/>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,25 @@
+.idea
+.history
+.vscode
+node_modules/*
+.eslintrc
+nohup.out
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+.env
+
+# Virtual environments
+.venv
+
+# infrastructure files
+db/
+prompts/
+tmp/
+uploads/
